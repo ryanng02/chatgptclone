@@ -28,7 +28,7 @@ const App = () => {
       }
     }
     try{
-      const response= await fetch('https://chatgptclone-2.onrender.com', options)
+      const response= await fetch('https://chatgptclone-2.onrender.com/completions', options)
       const data = await response.json()
       //console.log(data)
       setMessage(data.choices[0].message) //getting message from AI
